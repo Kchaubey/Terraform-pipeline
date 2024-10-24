@@ -2,7 +2,7 @@ resource "aws_instance" "jenkins" {
   ami           = var.ami_id
   instance_type = var.instance_type
   subnet_id     = aws_subnet.public.id
-  key_name      = var.key_name
+  key_name      = Jenkins
   security_groups = [aws_security_group.jenkins_sg.id]
 
   tags = {
