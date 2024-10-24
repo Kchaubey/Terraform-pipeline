@@ -11,5 +11,5 @@ variable "ami_id" {
 }
 
 variable "key_name" {
-  default = "my-aws-key" # Replace with your SSH key name
+  default = "Jenkins" # Replace with your SSH key name
 }
